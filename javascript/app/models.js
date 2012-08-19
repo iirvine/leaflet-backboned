@@ -3,9 +3,9 @@ var App = App || {};
 App.MapModule = function () {
 	this.map;
 
-	var createMap = function(element, initialView) {
+	var createMap = function(element, defaultView) {
 		this.map = L.map(element)
-					.setView(initialView.coords, initialView.zoom);
+					.setView(defaultView.coords, defaultView.zoom);
 
 		this.addBaseLayer();
 		return this.map;
