@@ -7,7 +7,8 @@ App.Router = Backbone.Router.extend({
 
 	initialize: function() {		
 		this.mapView = new App.MapView({
-			mapModule: new App.MapModule()
+			mapModule: new App.MapModule(),
+			el: "div#map"
 		});
 	},
 
