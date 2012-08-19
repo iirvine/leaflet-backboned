@@ -6,9 +6,9 @@ App.Router = Backbone.Router.extend({
 	},
 
 	initialize: function() {		
+		App.vent.on('map:createMap', App.MapModule.createMap, App.MapModule);
 		this.mapView = new App.AppSpecificMapView({
-			mapModule: new App.MapModule(),
-			el: "div#map",
+			mapModule: App.MapModule,
 			defaultView: { coords: [37.8, -96], zoom: 4 }
 		});
 	},

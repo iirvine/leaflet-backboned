@@ -8,7 +8,7 @@ App.MapView = Backbone.View.extend({
 			this.setElement(options.el);
 
 		this.mapModule = options.mapModule;
-		this.mapModule.createMap(this.el, options.defaultView);
+		App.vent.trigger('map:createMap', this.el, options.defaultView);
 	},
 });
 
