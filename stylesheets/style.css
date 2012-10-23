@@ -1,0 +1,47 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+html, body, #map {
+	height: 100%;
+}
+
+.search-radius-grabber {
+	background: red;
+	width: 15px !important;
+	height: 15px !important;
+	-moz-border-radius: 10em;
+	-webkit-border-radius: 10em;
+	border-radius: 10em;	
+}
+
+.photo {
+	width: 100px;
+	height: 100px;
+	-moz-border-radius: 10em;
+	-webkit-border-radius: 10em;
+	border-radius: 10em;
+}
+
+.leaflet-control-zoom {
+	background: none;
+}
+
+.leaflet-control-locate {
+	margin-bottom: 5px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	padding: 4px;
+}
+
+.leaflet-control-locate a {
+	background-position: 50% 50%;
+	width: 16px;
+	height: 17px;
+	background-repeat: no-repeat;
+	display: block;
+	background-image: url(../assets/location.png);
+	background-color: rgba(255,255,255,0.75);
+}
