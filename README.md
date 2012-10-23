@@ -1,4 +1,4 @@
 leaflet-backboned
 =================
 
-Initial commit of a little leaflet + backbone boilerplate project.
+Ever-evolving backbone+leaflet boilerplate and patterns for rapid prototyping. Fair warning: boilerplate and/or patterns may be terrible.
