@@ -10,13 +10,6 @@
           return modules[name];
         }
         return modules[name] = {};
-      },
-      require: function(name) {
-        if (modules[name]) {
-          return modules[name];
-        } else {
-          throw 'ModuleError: No module registered with name ' + name;
-        }
       }
     };
   })();

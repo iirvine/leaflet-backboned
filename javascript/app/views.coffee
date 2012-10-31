@@ -1,5 +1,4 @@
 ((exports, L, B, $) -> 
-	models = app.require('Models')
 
 	class exports.MapView extends B.View
 		el: "#map"
