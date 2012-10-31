@@ -5,7 +5,7 @@ window.app = do ->
 				return modules[name]
 			return modules[name] = {}
 
-_.extend(window.app, Backbone.Events)
+_.extend(window.app, Backbone.Events) 
 
 $(document).ready ->
 	Router = app.module("Routers").Router

@@ -3,11 +3,10 @@
   var __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  (function(module) {
-    var Models, Views;
-    Views = app.module('Views');
-    Models = app.module('Models');
-    return module.Router = (function(_super) {
+  (function(exports) {
+    var BaseMap;
+    BaseMap = app.module('BaseMap');
+    return exports.Router = (function(_super) {
 
       __extends(Router, _super);
 
@@ -22,8 +21,8 @@
       Router.prototype.defaultCoords = [37.8, -96];
 
       Router.prototype.initialize = function() {
-        return this.mapView = new Views.MapView({
-          mapModel: new Models.MapModel,
+        return this.mapView = new BaseMap.MapView({
+          mapModel: new BaseMap.MapModel,
           defaultView: {
             coords: this.defaultCoords,
             zoom: 4

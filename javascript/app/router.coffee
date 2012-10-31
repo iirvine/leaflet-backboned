@@ -1,16 +1,15 @@
-((module) ->
-	Views = app.module('Views')
-	Models = app.module('Models')
+((exports) ->
+	BaseMap = app.module('BaseMap')
 
-	class module.Router extends Backbone.Router
+	class exports.Router extends Backbone.Router
 		routes:
 			"": "index"
 
 		defaultCoords: [37.8, -96]
 
 		initialize: ->
-			@mapView = new Views.MapView
-				mapModel : new Models.MapModel
+			@mapView = new BaseMap.MapView
+				mapModel : new BaseMap.MapModel
 				defaultView : 
 					coords : @defaultCoords
 					zoom : 4
